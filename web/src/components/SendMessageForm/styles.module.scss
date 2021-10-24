@@ -22,8 +22,14 @@
 
   cursor: pointer;
 
+  transition: 0.1s;
+
   &:hover {
     filter: brightness(0.9);
+  }
+
+  &:active {
+    transform: translate(0.1rem, 0.1rem);
   }
 }
 
@@ -118,8 +124,16 @@
     align-items: center;
     justify-content: center;
 
+    transition: 0.1s;
+
     &:hover {
       filter: brightness(0.9);
+      box-shadow: 0.1rem 0.1rem 0.2rem;
+    }
+
+    &:active {
+      transform: translate(0.1rem, 0.1rem);
+      box-shadow: none;
     }
   }
 }
