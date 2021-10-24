@@ -9,10 +9,12 @@ export function App() {
   const { user } = useContext(AuthContext)
 
   return (
-    <main className={`${styles.contentWrapper} ${!!user ? styles.contentSignedIn : ''}`}>
-      <MessageList />
-      { !!user ? <SendMessageForm /> : <LoginBox />}
-    </main>
+    <body>
+      <main className={`${styles.contentWrapper} ${!!user ? styles.contentSignedIn : ''}`}>
+        <MessageList />
+        { !!user ? <SendMessageForm /> : <LoginBox />}
+      </main>
+    </body>
   )
 }
 
